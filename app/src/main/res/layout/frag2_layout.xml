@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context=".soon.QRTeamAdd.Frag2">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="197dp">
+
+        <Button
+            android:id="@+id/bt_chat"
+            android:layout_width="390dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginRight="10dp"
+            android:text="ЖИВОЙ ЧАТ"
+            android:textSize="50dp" />
+
+
+        <Button
+            android:id="@+id/bt_qr_team"
+            android:layout_width="397dp"
+            android:layout_height="82dp"
+            android:layout_below="@+id/bt_chat"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="КОМАНДА"
+            android:textSize="50dp" />
+    </RelativeLayout>
+</FrameLayout>

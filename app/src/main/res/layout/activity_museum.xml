@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context=".museumactivity.MuseumActivity"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/museum_image_activity"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/museum_image_activity">
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/profile_list2">
+
+
+            <TextView
+                android:id="@+id/museum_name_activity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Моя хата"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/museum_name_inform"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/museum_name_activity"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="25dp"
+                android:text="Музей Москвы"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/museum_name_map_gps"
+                android:layout_width="164dp"
+                android:layout_height="151dp"
+                android:text="Найти\nна\nкарте"
+                android:layout_below="@+id/museum_name_inform"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:textSize="30dp"
+                android:backgroundTint="@color/colorAccent" />
+
+            <Button
+                android:id="@+id/museum_name_map"
+                android:layout_width="164dp"
+                android:layout_height="151dp"
+                android:layout_below="@+id/museum_name_inform"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginRight="20dp"
+                android:text="Нахожусь\nсейчас"
+                android:textSize="21dp"
+                android:backgroundTint="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/museum_name_map_marshrut"
+                android:layout_width="164dp"
+                android:layout_height="151dp"
+                android:layout_below="@+id/museum_name_map_gps"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Проложить\nмаршрут"
+                android:textSize="18dp"
+                android:backgroundTint="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/museum_name_panorama"
+                android:layout_width="164dp"
+                android:layout_height="151dp"
+                android:layout_below="@+id/museum_name_map"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginRight="20dp"
+                android:text="Отрыть\nпанораму"
+                android:textSize="21dp"
+                android:backgroundTint="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/et_comment_otzivi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/museum_name_panorama"
+                android:layout_marginTop="40dp"
+                android:gravity="center_horizontal"
+                android:text="Оцените музей:"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/et_comment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_rating_comment"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/et_rating_comment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/et_comment_otzivi"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="Ваша оценка"
+                android:textColor="@color/black"
+                android:textSize="30dp" />
+
+            <Button
+                android:id="@+id/br_send_comment"
+                android:layout_width="fill_parent"
+                android:layout_height="81dp"
+                android:layout_below="@+id/et_comment"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Опубликовать"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/Otzivi"
+                android:layout_width="fill_parent"
+                android:layout_height="81dp"
+                android:layout_below="@+id/br_send_comment"
+                android:layout_alignParentEnd="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_horizontal"
+                android:text="Отзывы:"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Otzivi">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/comment_list"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>

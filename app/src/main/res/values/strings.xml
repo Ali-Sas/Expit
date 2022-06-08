@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Expit</string>
+    <string name="passport">Passport Travelers</string>
+    <string name="name">Your name</string>
+    <string name="phone">Your phone</string>
+    <string name="year">Years</string>
+    <string name="logo">LOGO!</string>
+    <string name="virtualbutton">ДАЛЕЕ</string>
+    <string name="moscow3">ДАЛЕЕ</string>
+    <string name="item1">Чуть позже будет реализовано</string>
+    <string name="item2">Чуть позже будет реализовано</string>
+    <string name="item3">Чуть позже будет реализовано</string>
+    <string name="action_settings">ДАЛЕЕ</string>
+    <string name="rating">Топ 15 по оценкам пользователей</string>
+    <string name="clickClustering">Tapped cluster with %d items</string>
+
+    <string name="not_found_error_message">Просмотр для данного музея пока недоступен</string>
+    <string name="network_error_message">Нет подключения к интернету</string>
+    <string name="remote_error_message">Remote server error</string>
+    <string name="unknown_error_message">Unknown error</string>
+
+
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/layout_bg">
+
+    <ImageView
+        android:id="@+id/image_collection"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_number_stage_collection"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_collection"
+        android:layout_marginLeft="14dp"
+        android:text="Оценка"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_number_item"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_number_stage_collection"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="dedefefef"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+</RelativeLayout>

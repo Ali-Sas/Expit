@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login">
+
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="wrap_content"
+        android:layout_height="464dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="216dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="51dp"
+        android:background="@drawable/layout_bg">
+
+        <EditText
+            android:id="@+id/request_login"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/request_email"
+            android:layout_marginTop="175dp"
+            android:hint="Login"
+            android:maxLength="50"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white">
+
+        </EditText>
+
+        <EditText
+
+            android:id="@+id/request_email"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/request_surname"
+            android:layout_marginTop="120dp"
+            android:hint="Number"
+            android:maxLength="12"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white">
+
+        </EditText>
+
+        <EditText
+
+            android:id="@+id/request_name"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:hint="Your name"
+            android:maxLength="102"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white">
+
+        </EditText>
+
+        <EditText
+
+            android:id="@+id/request_surname"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:maxLength="24"
+            android:layout_below="@+id/request_name"
+            android:layout_marginTop="65dp"
+            android:hint="Your surname"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white">
+
+        </EditText>
+
+        <EditText
+
+            android:id="@+id/request_password"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:maxLength="50"
+            android:layout_below="@+id/request_password"
+            android:layout_marginTop="230dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="Repeat password"
+            android:textColor="@color/white">
+
+        </EditText>
+
+        <EditText
+
+            android:id="@+id/repeat_password"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:maxLength="50"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@+id/request_password"
+            android:layout_marginTop="285dp"
+            android:hint="Repeat password"
+            android:inputType="textPassword"
+            android:textColor="@color/white">
+
+        </EditText>
+
+        <com.dd.morphingbutton.impl.LinearProgressButton
+            android:id="@+id/btn_request"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/repeat_password"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="390dp"
+            android:layout_marginBottom="10dp"
+            android:background="#86918E8E"
+            android:text="ЗАРЕГИСТРИРОВАТЬСЯ"
+            android:textSize="20dp"
+            android:textStyle="normal">
+
+        </com.dd.morphingbutton.impl.LinearProgressButton>
+
+
+
+
+
+
+
+
+    </FrameLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context=".museumcollection.FragMuseumCollection"
+    android:background="@drawable/background">
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative_museum"
+        android:background="@drawable/layout_bg_2">
+
+
+        <TextView
+            android:id="@+id/et_collection_museum_country"
+            android:layout_width="wrap_content"
+            android:textSize="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/colorAccent"
+            android:layout_height="wrap_content"
+            android:text="Город"
+            android:background="@drawable/layout_bg"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/et_collection_museum_sort"
+            android:layout_width="wrap_content"
+            android:textSize="25dp"
+            android:textColor="@color/blue"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_collection_museum_country"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/layout_bg"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="20dp"
+            android:text="Сортировка по"
+            android:textStyle="bold"/>
+
+
+        <Button
+            android:id="@+id/filter_museum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="25dp"
+            android:textSize="15dp"
+            android:background="@drawable/layout_bg_2"
+            android:gravity="center_vertical"
+            android:text="Применить" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_museum">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_collection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rv_collection"
+            android:layout_marginTop="60dp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
